@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import post_list, post_detail, post_create, post_update, post_delete
+from .rss import LatestPostsFeed
 
 
 urlpatterns = [
@@ -28,4 +29,6 @@ urlpatterns = [
         post_delete,
         name='post_delete'
     ),
+
+    path('rss/', LatestPostsFeed(), name='post_rss'),
 ]

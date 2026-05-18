@@ -44,6 +44,10 @@
                     + New Post
                 </a>
 
+                <a href="{% url 'post_rss' %}" class="btn btn-outline-info me-2">
+                    RSS
+                </a>
+
                 <form action="{% url 'logout' %}"
       method="POST"
       class="d-inline">
